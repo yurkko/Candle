@@ -139,7 +139,7 @@ ul {
 /* About */
 
 .about {
-	margin-bottom: 150px;
+	/* margin-bottom: 150px; */
 	background-color: #a5978e;
 	padding: 50px 0 50px;
 	color: #fafafa;
@@ -199,9 +199,9 @@ ul {
 
 /* Products */
 
-/* .products {
+.products {
 	padding: 150px 0;
-} */
+}
 
 .section__inner {
 	display: flex;
