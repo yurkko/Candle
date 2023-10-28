@@ -21,7 +21,7 @@
         <picture>
           <source media="(min-width: 768px)" srcset="images/logo-header.png">
           <source media="(min-width: 320px)" srcset="images/logo-header.svg">
-          <img src="images/logo-header.png" alt="" class="logo__img">
+          <img src="images/logo-header.png" alt="logo" class="logo__img">
         </picture>
       </a>
 
@@ -38,7 +38,7 @@
               <a href="#products" class="menu__list-link">Каталог</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="menu__list-link">Команда</a>
+              <a href="#team" class="menu__list-link">Команда</a>
             </li>
             <li class="header__list-item">
               <a href="#" class="menu__list-link">Відгуки</a>
@@ -72,14 +72,13 @@
         <picture class="top__img">
           <source srcset="images/top-s.png" media="(max-width:400px)">
           <source srcset="images/top-m.png" media="(max-width:480px)">
-          <img class="top__img-l" src="images/top-l.png" alt="">
+          <img class="top__img-l" src="images/top-l.png" alt="media-img">
         </picture>
       </div>
     </section>
     <!-- Top -->
 
     <!-- Description  -->
-
     <section id="about" class="about">
       <div class="container about__inner">
         <div class="about__content">
@@ -109,15 +108,14 @@
         </ul>
       </div>
     </section>
-
     <!-- Description -->
 
     <!-- Products -->
     <section id="products" class="products section-padding">
       <div class="container section__inner">
-        <div class="products__descr section__descr">
+        <div class="section__descr">
           <h2 class="products__title title">Наші товари</h2>
-          <p class="products__text text">
+          <p class="text">
             Ми використовуємо тільки найкращі якісні матеріали: соєвий віск, віскові барвники, високоякісні ароматичні
             олії та бавовняні фітільці. Відтінки свічок дуже гармонійно поєднуються з ароматом, створюючи незабутню
             атмосферу у вашому домі.
@@ -160,12 +158,13 @@
       </div>
     </section>
     <!-- Productss -->
+
     <!-- Steps -->
     <section class="steps">
       <div class="container section__inner">
-        <div class="steps__descr section__descr">
+        <div class="section__descr">
           <h2 class="steps__title title">Етапи створення свічок</h2>
-          <p class="steps__text text">
+          <p class="text">
             Створення свічки із соєвого воску може складатися з наступних етапів:
           </p>
         </div>
@@ -230,7 +229,7 @@
     <!-- Course -->
     <section id="courses" class="courses section-padding">
       <div class="container section__inner">
-        <div class="courses__descr section__descr">
+        <div class="section__descr">
           <h2 class="courses__title title">Наші курси</h2>
           <p class="courses__text text">
             Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй галузі, розвиватися
@@ -267,6 +266,49 @@
       </div>
     </section>
     <!-- Course -->
+
+    <!-- Team -->
+    <section id="team" class="team">
+      <div class="container team__inner section__inner">
+        <div class="section__descr">
+          <h2 class="team__title title">Наші викладачі</h2>
+          <p class="text">
+            Ці люди працюють разом, щоб створювати курси для вас, які допоможуть вам почати власний бізнес або хоббі.
+          </p>
+        </div>
+        <div class="team__content section__content-descr">
+          <div class="team__item">
+            <img src="images/teacher-bogdan.jpg" alt="img-people-team" class="team__item-img">
+            <div class="team__item-descr-box">
+              <p class="team__item-name">Викладач Богдан</p>
+              <p class="team__item-descr">Має досвід викладання і роботи 4 роки</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="images/teacher-anna.jpg" alt="img-people-team" class="team__item-img">
+            <div class="team__item-descr-box">
+              <p class="team__item-name">Викладач Анна</p>
+              <p class="team__item-descr">Має досвід викладання і роботи 6 років</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="images/designer-galina.jpg" alt="img-people-team" class="team__item-img">
+            <div class="team__item-descr-box">
+              <p class="team__item-name">Викладач Галина</p>
+              <p class="team__item-descr">Навчає сфері дизайну та декорування</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="images/smm-olya.jpg" alt="img-people-team" class="team__item-img">
+            <div class="team__item-descr-box">
+              <p class="team__item-name">Маркетолог Ольга</p>
+              <p class="team__item-descr">Допоможе вам з рекламою</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team -->
   </main>
 
   <!-- Footer -->
@@ -289,7 +331,7 @@
             <a href="#" class="menu__list-link">Каталог</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Команда</a>
+            <a href="#team" class="menu__list-link">Команда</a>
           </li>
           <li class="menu__list-item">
             <a href="#" class="menu__list-link">Відгуки</a>

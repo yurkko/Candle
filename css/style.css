@@ -140,6 +140,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 25px;
 	padding: 4px 10px 0;
 	min-height: 70px;
 }
@@ -149,13 +150,15 @@ img {
 }
 .menu__list {
 	display: flex;
-	gap: 20px;
+	flex-wrap: wrap;
+	gap: 10px 20px;
 }
 .menu__list-link {
 	text-transform: uppercase;
 }
 .header__phone {
 	position: relative;
+	flex-shrink: 0;
 	z-index: 5;
 }
 
@@ -327,7 +330,7 @@ img {
 	padding-top: 150px;
 }
 .courses__content {
-	gap: 0 15px;
+	gap: 20px 15px;
 }
 .courses__item {
 	margin: 0 auto;
@@ -386,6 +389,48 @@ img {
 }
 
 /* Course */
+
+/* Team */
+.team {
+	padding: 50px 0 82px;
+	background-color: #a5978e;
+	color: #fff;
+}
+.team__inner {
+	gap: 50px;
+}
+
+.team__content {
+	padding-bottom: 0;
+	gap: 75px;
+}
+.team__item {
+	position: relative;
+}
+.team__item-img {
+	height: 100%;
+}
+.team__item-descr-box {
+	position: absolute;
+	right: 6px;
+	bottom: 8px;
+	width: 165px;
+	padding: 14px 10px;
+	background-color: #7b6152;
+	text-align: center;
+	z-index: 4;
+}
+.team__item-name {
+	font-family: Yeseva One;
+	font-size: 12px;
+	flex-shrink: 0;
+}
+.team__item-descr {
+	font-size: 10px;
+	flex-shrink: 0;
+}
+
+/* Team */
 
 /* Footer */
 .footer {
