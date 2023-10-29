@@ -21,7 +21,7 @@
         <picture>
           <source media="(min-width: 768px)" srcset="images/logo-header.png">
           <source media="(min-width: 320px)" srcset="images/logo-header.svg">
-          <img src="images/logo-header.png" alt="logo" class="logo__img">
+          <img loading="lazy" src="images/logo-header.png" alt="logo" class="logo__img">
         </picture>
       </a>
 
@@ -94,22 +94,24 @@
 
         <ul class="about__list section--decor">
           <li class="about__item">
-            <img src="images/about-1.jpg" alt="" class="about__item-img about__item-img--small">
+            <img src="images/about-1.jpg" alt="Насолоджуйтеся моментом" class="about__item-img about__item-img--small"
+              loading="lazy">
             <p class="about__item-text">Насолоджуйтеся моментом</p>
           </li>
           <li class="about__item">
-            <img src="images/about-2.png" alt="" class="about__item-img about__item-img--big">
+            <img src="images/about-2.png" alt="Створіть улюблену атмосферу" class="about__item-img about__item-img--big"
+              loading="lazy">
             <p class="about__item-text">Створіть улюблену атмосферу</p>
           </li>
           <li class="about__item">
-            <img src="images/about-3.jpg" alt="" class="about__item-img about__item-img--small">
+            <img src="images/about-3.jpg" alt="Виготовлені з любов'ю" class="about__item-img about__item-img--small"
+              loading="lazy">
             <p class="about__item-text">Виготовлені з любов'ю</p>
           </li>
         </ul>
       </div>
     </section>
     <!-- Description -->
-
     <!-- Products -->
     <section id="products" class="products section-padding">
       <div class="container section__inner">
@@ -123,7 +125,7 @@
         </div>
         <div class="products__content section__content-descr section--decor">
           <div class="products__item card-styles">
-            <img src="images/products-heart.jpg" alt="" class="products__item-img">
+            <img src="images/products-heart.jpg" alt="Свічка 'Сердечко кохання'" loading="lazy">
             <p class="products__item-price">10$</p>
             <h4 class="products__item-title">"Сердечко кохання"</h4>
             <p class="products__item-text">Запах: ніжний аромат троянди та ванілі.
@@ -131,7 +133,7 @@
             <button class="products__btn button">Купити</button>
           </div>
           <div class="products__item card-styles">
-            <img src="images/products-vortex.jpg" alt="" class="products__item-img">
+            <img src="images/products-vortex.jpg" alt="Свічка 'Вихір кохання'" loading="lazy">
             <p class="products__item-price">20$</p>
             <h4 class="products__item-title">"Вихір кохання"</h4>
             <p class="products__item-text">Запах: ніжний аромат лаванди.
@@ -139,7 +141,7 @@
             <button class="products__btn button">Купити</button>
           </div>
           <div class="products__item card-styles">
-            <img src="images/products-rainbow.jpg" alt="" class="products__item-img">
+            <img src="images/products-rainbow.jpg" alt="Свічка 'Веселка'" loading="lazy">
             <p class="products__item-price">10$</p>
             <h4 class="products__item-title">"Веселка"</h4>
             <p class="products__item-text">Запах: Свіжий аромат лайма.
@@ -147,7 +149,7 @@
             <button class="products__btn button">Купити</button>
           </div>
           <div class="products__item card-styles">
-            <img src="images/products-female.jpg" alt="" class="products__item-img">
+            <img src="images/products-female.jpg" alt="Свічка 'Жіноча чарівність'" loading="lazy">
             <p class="products__item-price">10$</p>
             <h4 class="products__item-title">"Жіноча чарівність"</h4>
             <p class="products__item-text">Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.
@@ -157,6 +159,7 @@
         </div>
       </div>
     </section>
+
     <!-- Productss -->
 
     <!-- Steps -->
@@ -172,21 +175,21 @@
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
               ароматизатори, барвники та інші додаткові матеріали.</p>
-            <img src="images/s1.jpg" alt="" class="steps__item-img">
+            <img src="images/s1.jpg" alt="Підготовка матеріалів" loading="lazy" class="steps__item-img">
           </li>
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Підготовка форми: вибір форми для свічки та підготовка її до наповнення воском.
             </p>
-            <img src="images/s2.jpg" alt="" class="steps__item-img">
+            <img src="images/s2.jpg" alt="Підготовка форми" loading="lazy" class="steps__item-img">
           </li>
           <!--  -->
           <li class="steps__list-item steps__item--even">
-            <img src="images/s3.jpg" alt="" class="steps__item-img">
+            <img src="images/s3.jpg" alt="Приготування воску" loading="lazy" class="steps__item-img">
             <p class="steps__item-text">Приготування воску: розплавлення соєвого воску у плавильному пристрої до
               потрібної температури. Додавання ароматизаторів та барвників за необхідності.</p>
           </li>
           <li class="steps__list-item steps__item--even">
-            <img src="images/s4.jpg" alt="" class="steps__item-img">
+            <img src="images/s4.jpg" alt="Підготовка фітіля" loading="lazy" class="steps__item-img">
             <p class="steps__item-text">Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він
               був рівномірно напружений.</p>
           </li>
@@ -194,36 +197,38 @@
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
               ароматизатори, барвники та інші додаткові матеріали.</p>
-            <img src="images/s5.jpg" alt="" class="steps__item-img">
+            <img src="images/s5.jpg" alt="Підготовка матеріалів" loading="lazy" class="steps__item-img">
           </li>
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Наповнення форми: воск налити до форми, поки вона не заповниться повністю.
               Чекати, доки він затвердіє.</p>
-            <img src="images/s6.jpg" alt="" class="steps__item-img">
+            <img src="images/s6.jpg" alt="Наповнення форми" loading="lazy" class="steps__item-img">
           </li>
           <!--  -->
           <li class="steps__list-item steps__item--even">
-            <img src="images/s7.jpg" alt="" class="steps__item-img">
+            <img src="images/s7.jpg" alt="Приготування воску" loading="lazy" class="steps__item-img">
             <p class="steps__item-text">Приготування воску: розплавлення соєвого воску у плавильному пристрої до
               потрібної температури. Додавання ароматизаторів та барвників за необхідності.</p>
           </li>
           <li class="steps__list-item steps__item--even">
-            <img src="images/s8.jpg" alt="" class="steps__item-img">
+            <img src="images/s8.jpg" alt="Підготовка фітіля" loading="lazy" class="steps__item-img">
             <p class="steps__item-text">Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він
               був рівномірно напружений.</p>
           </li>
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
               ароматизатори, барвники та інші додаткові матеріали.</p>
-            <img src="images/s9.jpg" alt="" class="steps__item-img">
+            <img src="images/s9.jpg" alt="Підготовка матеріалів" loading="lazy" class="steps__item-img">
           </li>
           <li class="steps__list-item steps__item--odd">
             <p class="steps__item-text">Наповнення форми: воск налити до форми, поки вона не заповниться повністю.
               Чекати, доки він затвердіє.</p>
-            <img src="images/s10.jpg" alt="" class="steps__item-img">
+            <img src="images/s10.jpg" alt="Наповнення форми" loading="lazy" class="steps__item-img">
           </li>
         </ol>
+      </div>
     </section>
+
     <!-- Steps -->
 
     <!-- Course -->
@@ -233,12 +238,14 @@
           <h2 class="courses__title title">Наші курси</h2>
           <p class="courses__text text">
             Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй галузі, розвиватися
-            як професіонал, а також покращити якість свого життя. </p>
+            як професіонал, а також покращити якість свого життя.
+          </p>
         </div>
         <div class="courses__content section__content-descr section--decor">
           <div class="courses__item card-styles">
             <div class="courses__wrap">
-              <img src="images/course-1.jpg" alt="CourseImg" class="courses__wrap-img">
+              <img src="images/course-1.jpg" loading="lazy" alt="Курс 'Основи виготовлення свічок'"
+                class="courses__wrap-img">
               <p class="courses__wrap-title">Основи виготовлення свічок</p>
               <p class="courses__wrap-time">Навчання <span>- 20 год</span></p>
               <p class="courses__wrap-price">Ціна -<span>40$</span></p>
@@ -251,10 +258,11 @@
           <!--  -->
           <div class="courses__item card-styles">
             <div class="courses__wrap">
-              <img src="images/course-2.jpg" alt="CourseImg" class="courses__wrap-img">
+              <img src="images/course-2.jpg" loading="lazy" alt="Курс 'Мистецтво ароматерапії'"
+                class="courses__wrap-img">
               <p class="courses__wrap-title">Мистецтво ароматерапії</p>
               <p class="courses__wrap-time">Навчання <span>- 20 год</span></p>
-              <p class="courses__wrap-price">Ціна -40$</p>
+              <p class="courses__wrap-price">Ціна - 40$</p>
             </div>
             <h4 class="courses__item-title">Мистецтво ароматерапії</h4>
             <p class="courses__item-text">Будем вивчати мистецтво ароматерапії та виготовлення
@@ -265,6 +273,7 @@
         </div>
       </div>
     </section>
+
     <!-- Course -->
 
     <!-- Team -->
@@ -278,28 +287,28 @@
         </div>
         <div class="team__content section__content-descr">
           <div class="team__item">
-            <img src="images/teacher-bogdan.jpg" alt="img-people-team" class="team__item-img">
+            <img src="images/teacher-bogdan.jpg" loading="lazy" alt="Викладач Богдан" class="team__item-img">
             <div class="team__item-descr-box">
               <p class="team__item-name">Викладач Богдан</p>
               <p class="team__item-descr">Має досвід викладання і роботи 4 роки</p>
             </div>
           </div>
           <div class="team__item">
-            <img src="images/teacher-anna.jpg" alt="img-people-team" class="team__item-img">
+            <img src="images/teacher-anna.jpg" loading="lazy" alt="Викладач Анна" class="team__item-img">
             <div class="team__item-descr-box">
               <p class="team__item-name">Викладач Анна</p>
               <p class="team__item-descr">Має досвід викладання і роботи 6 років</p>
             </div>
           </div>
           <div class="team__item">
-            <img src="images/designer-galina.jpg" alt="img-people-team" class="team__item-img">
+            <img src="images/designer-galina.jpg" loading="lazy" alt="Викладач Галина" class="team__item-img">
             <div class="team__item-descr-box">
               <p class="team__item-name">Викладач Галина</p>
               <p class="team__item-descr">Навчає сфері дизайну та декорування</p>
             </div>
           </div>
           <div class="team__item">
-            <img src="images/smm-olya.jpg" alt="img-people-team" class="team__item-img">
+            <img src="images/smm-olya.jpg" loading="lazy" alt="Маркетолог Ольга" class="team__item-img">
             <div class="team__item-descr-box">
               <p class="team__item-name">Маркетолог Ольга</p>
               <p class="team__item-descr">Допоможе вам з рекламою</p>
@@ -308,6 +317,7 @@
         </div>
       </div>
     </section>
+
     <!-- Team -->
   </main>
 
