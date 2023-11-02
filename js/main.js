@@ -39,15 +39,21 @@ window.addEventListener('scroll', function () {
 });
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {
+  speed: 1000,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
   },
-  parallax: true,
 });
 const certificatesSwiper = new Swiper('.certificates__swiper', {
   loop: true,
+  speed: 1500,
+  slidesPerView: 3,
+  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 0, // Задайте затримку між слайдами у мілісекундах (наприклад, 3000 мс = 3 секунди)
   },
 });
