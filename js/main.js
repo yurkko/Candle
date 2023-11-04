@@ -39,21 +39,40 @@ window.addEventListener('scroll', function () {
 });
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {
-  speed: 1000,
+  speed: 900,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
+    disableOnInteraction: true,
+    clickable: true,
   },
 });
 const certificatesSwiper = new Swiper('.certificates__swiper', {
   loop: true,
-  speed: 1500,
+  speed: 1000,
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // Від 320px до 479px
+    320: {
+      slidesPerView: 1,
+    },
+    // Від 480px до 649px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // Від 650px до 767px
+    650: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
   },
   autoplay: {
-    delay: 0, // Задайте затримку між слайдами у мілісекундах (наприклад, 3000 мс = 3 секунди)
+    delay: 1000,
   },
 });
