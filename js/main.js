@@ -1,12 +1,15 @@
 'use strict';
 
-// Зміні
+// Const
 const iconMenu = document.querySelector('.menu__icon');
 const header = document.querySelector('.header');
 const headerPhone = document.querySelector('.header__phone');
+//
+const initialBackgroundColor = '#fff8f3';
+let lastScrollPosition = window.scrollY;
+let isAtTop = true;
 
-// Функціонал
-
+// Function
 if (iconMenu) {
   const menuBody = document.querySelector('.menu__body');
   iconMenu.addEventListener('click', function (e) {
@@ -20,10 +23,7 @@ if (iconMenu) {
     }
   });
 }
-const initialBackgroundColor = '#fff8f3';
-let lastScrollPosition = window.scrollY;
-let isAtTop = true;
-
+// Header Scroll
 window.addEventListener('scroll', function () {
   const currentScrollPosition = window.scrollY;
   if (currentScrollPosition > 0) {
@@ -38,6 +38,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Swipers
 const feedbackSwiper = new Swiper('.feedback__swiper', {
   speed: 900,
   loop: true,
@@ -49,7 +50,7 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 });
 const certificatesSwiper = new Swiper('.certificates__swiper', {
   loop: true,
-  speed: 1000,
+  speed: 1500,
   slidesPerView: 3,
   spaceBetween: 20,
   pagination: {
@@ -73,6 +74,22 @@ const certificatesSwiper = new Swiper('.certificates__swiper', {
     },
   },
   autoplay: {
-    delay: 1000,
+    delay: 0,
+    disableOnInteraction: true,
   },
+});
+
+// Получаєм наш слайдер
+const certificateSwiperWrapper = document.querySelector(
+  '.certificates__swiper',
+);
+
+// Подія при наведені на слайдер він зупиняється
+certificateSwiperWrapper.addEventListener('mouseenter', () => {
+  certificatesSwiper.autoplay.stop(); // Зупинити автопрокрутку при наведенні
+});
+
+// Подія коли курсор вийшов за межі слайдера продовжити прокрутку
+certificateSwiperWrapper.addEventListener('mouseleave', () => {
+  certificatesSwiper.autoplay.start(); // Перезапустити автопрокрутку при знятті наведення
 });
