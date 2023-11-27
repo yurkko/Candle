@@ -50,7 +50,7 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 });
 const certificatesSwiper = new Swiper('.certificates__swiper', {
   loop: true,
-  speed: 1500,
+  speed: 1000,
   slidesPerView: 3,
   spaceBetween: 20,
   pagination: {
@@ -92,4 +92,13 @@ certificateSwiperWrapper.addEventListener('mouseenter', () => {
 // Подія коли курсор вийшов за межі слайдера продовжити прокрутку
 certificateSwiperWrapper.addEventListener('mouseleave', () => {
   certificatesSwiper.autoplay.start(); // Перезапустити автопрокрутку при знятті наведення
+});
+
+// Accordeon
+
+const accordeon = document.querySelector('.accordeon');
+const accordeonBtns = document.querySelectorAll('.accordeon__question-btn');
+
+accordeonBtns.forEach.call(accordeonBtns, (btn) => {
+  btn.addEventListener('click', () => {});
 });
