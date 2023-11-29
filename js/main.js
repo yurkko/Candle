@@ -98,7 +98,19 @@ certificateSwiperWrapper.addEventListener('mouseleave', () => {
 
 const accordeon = document.querySelector('.accordeon');
 const accordeonBtns = document.querySelectorAll('.accordeon__question-btn');
+const accordeonItem = document.querySelectorAll('.accordeon-item');
 
-accordeonBtns.forEach.call(accordeonBtns, (btn) => {
-  btn.addEventListener('click', () => {});
+accordeonItem.forEach(item => {
+  const btn = item.querySelector('.accordeon__question-btn');
+  const text = item.querySelector('.accordeon__text');
+
+  item.addEventListener('click', () => {
+    btn.classList.toggle('accordeon__question--active');
+    text.classList.toggle('accordeon__text--active');
+    if (text.classList.contains('accordeon__text--active')) {
+      text.style.maxHeight = text.scrollHeight + 'px';
+    } else {
+      text.style.maxHeight = null;
+    }
+  });
 });

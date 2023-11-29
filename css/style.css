@@ -16,7 +16,7 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Comfortaa', cursive;
+  font-family: Comfortaa, cursive;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -636,20 +636,50 @@ img {
 
   position: relative;
   padding: 16px 50px 16px 13px;
+
+  cursor: pointer;
+  position: relative;
+
+  -webkit-tap-highlight-color: transparent; /* Для Safari, Chrome та Opera */
+  touch-action: manipulation;
 }
 .accordeon__question-btn::before {
   content: '';
-  background: url('../images/contacts/arrow.svg');
+  background: url('../images/contacts/arrow.svg') no-repeat;
+  background-position: center;
+
+  width: 24px;
+  height: 24px;
 
   position: absolute;
+  top: 50%;
   right: 26px;
 
-  width: 17px;
-  height: 17px;
+  rotate: 180deg;
+  translate: 0 -50%;
+  transition: rotate 0.5s;
+}
+.accordeon__question-btn.accordeon__question--active::before {
+  rotate: 0deg;
 }
 .accordeon__text {
-  padding: 0px 30px 15px;
-  /* display: none; */
+  opacity: 0;
+  max-height: 0;
+  user-select: none;
+  visibility: hidden;
+
+  transition: all 0.3s;
+  transition: max-height 0.3s ease;
+
+  font-size: 14px;
+}
+.accordeon__text-wrap {
+  padding: 0 30px 15px;
+}
+
+.accordeon__text.accordeon__text--active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Promo */
@@ -927,7 +957,8 @@ img {
     justify-content: center;
   }
   .feedback__title,
-  .certificates__title {
+  .certificates__title,
+  .question__title {
     font-size: 30px;
   }
 }
@@ -971,9 +1002,9 @@ img {
   }
   .header__menu-list {
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
     gap: 20px 0;
   }
   .header__list-item {
@@ -1033,7 +1064,7 @@ img {
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
-    padding: 100px 30px 30px 30px;
+    padding: 150px 30px 30px 30px;
     transition: left 0.5s ease 0s;
     overflow: auto;
   }
@@ -1252,6 +1283,23 @@ img {
   .contacts__img {
     width: 187px;
     object-fit: cover;
+  }
+
+  /* Accordeon */
+
+  .accordeon__question-btn {
+    padding: 13px 50px 13px 8px;
+
+    font-size: 12px;
+  }
+  .accordeon__question-btn::before {
+    width: 15px;
+    height: 15px;
+
+    right: 15px;
+  }
+  .accordeon__text {
+    font-size: 12px;
   }
 }
 
